@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="job application form" content="job application form" />
+  <meta name="keywords" content="HTML, Form, tags" />
+  <meta name="author" content="Mohammad Shafiul Marjan Ali" />
+  <link href="style/style.css" rel="stylesheet"/>
+  
+  
+  <title>Job Application</title>
+</head>
+<body>
+<!-- Begin header-->
+<header class="front">
+  <div class="company-name-logo">
+    <img src="images/wibp.png" alt="logo">
+    
+  </div>
+  <nav class="navigation-bar">
+      <div class="nav-links">	 
+          <a href="index.html" class="nave-links-item">Home</a>
+          <a href="jobs.html" class="nave-links-item">Jobs</a>
+          <a href="apply.html" class="nave-links-item">Apply</a>
+          <a href="about.html" class="nave-links-item">About</a>
+		  <a href="enhancement.html" class="nave-links-item">Enhancement</a>
+                           
+      </div>
+  </nav>
+                            
+</header>
+                    <!--Begin form-->
+<div class="apply-main-body">
+  <h1>Application For Employment</h1>
+  <form class="apply-form-section" method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+  
+    <p class="apply-p-element">
+      <label for="jobreferencenumber">Job Reference Number</label> 
+      <input type="text" name="jobreferenceno" id="jobreferencenumber" placeholder="Appropiate job reference number" pattern="[a-zA-Z0-9]{5}" required="required">
+    </p>
+      <p class="apply-p-element">
+       <label for="firstName">First Name</label> 
+      <input type="text" name="Firstname" id="firstName" placeholder=" 8 letters only" pattern="[a-zA-Z]{1,20}" required="required">
+      </p>
+     
+       <p class="apply-p-element"><label for="lastname">Last Name</label> 
+      <input type="text" name="Lastname" id="lastname"  placeholder=" 8 letters only" pattern="[a-zA-Z]{1,20}" required="required">
+     </p>
+     <p class="apply-p-element">
+      <label for="dateofbirth">Date Of Birth</label> 
+      <input type="text" name= "dateofbirth" id="dateofbirth" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}" required="required">
+     
+     </p>
+       
+       
+      <fieldset class="apply-fieldset-gender-selection-size">
+           <legend>Gender</legend>
+      <input type="radio" id="female" name="gender" value="female"  required="required"/>
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male"  required="required"/>
+        <label for="male">Male</label>
+      </fieldset>
+      <p class="apply-p-element">
+        <label for="streetaddress">Street Address:</label>
+        <input type="text" id="streetaddress" pattern="{1,40}" name="street address" required="required"/>
+      </p>
+      <p class="apply-p-element">
+        <label for="suburb/town">Suburb/Town:</label>
+        <input type="text" id="suburb/town" pattern="{1,40}" name="suburb/town" required="required"/>
+      </p>  
+        
+  
+            <p class="apply-p-element">
+          
+              <label for="State">State:</label>
+                <select name="State" id="State">
+                  <option value="Please Select">Please Select</option>
+                  <option value="VIC">VIC</option>
+                  <option value="NSW">NSW</option>
+                  <option value="QLD">QLD</option>
+                  <option value="NT">NT</option>
+                  <option value="WA">WA</option>
+                  <option value="SA">SA</option>
+                  <option value="TAS">TAS</option>
+                  <option value="ACT">ACT</option>
+                </select>
+                </p>
+              
+       <p class="apply-p-element">
+         <label for="Postcode">Post Code:</label> 
+        <input type="tel" id="Postcode" name="postcode" pattern="[0-9]{0,4}" required="required"/>
+            </p>
+  
+              <p class="apply-p-element">
+                <label for="email">Email Address</label> 
+              <input type="email" id="email" name="email" required="required"/>
+          </p>
+          <p class="apply-p-element">
+            <label for="phonenumber">Phone Number</label> 
+          <input type="tel" id="phonenumber" pattern="[0-9]{8,12}" name="phonenumber"  required="required"/>
+      </p>
+      <p class="apply-p-element"> Your Skills:</p>
+      <div class="apply-check-box">
+        <input type="checkbox" id="communicationskill" name="skill[]" value="communicationskill">
+        <label for="communicationskill">Communication skill</label> 
+        <input type="checkbox" id="leadership" name="skill[]" value="leadership" >
+        <label for="leadership">Leadership</label>
+        <input type="checkbox" id="coding" name="skill[]" value="coding" >
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="programming" name="skill[]" value="programming" >
+        <label for="programming">Programming</label> 
+        <input type="checkbox" id="otherskill" name="skill[]" value="otherskill" >
+        <label for="communicationskill">Other skills:</label> 
+      </div>
+        
+        <p class="apply-text-area"><textarea id="otherskills" name="otherskill" rows="5" cols="50" placeholder="Write your other skills here"></textarea>
+        </p>
+        
+  
+      
+    <div class="apply-buttons-section">
+      <input type= "submit" value="Apply"/>
+      <input type= "reset" value="Clear All"/>
+    </div>
+    
+  </form>
+</div>
+
+
+     <!--Footer-->
+     <footer class="footer">
+      <section class="footer-section">
+        <h4>Contact Us</h4>
+        <p class="logo">
+          <a href="https://www.facebook.com/"><img src="images/facebook-icon.png" alt=""></a>
+          <a href="http://www.gmail.com/"><img src="images/gmail-icon.png" alt=""></a>
+          <a href="http://www.twitter.com/"><img src="images/twitter-icon.png" alt=""></a>
+          <a href="http://www.instagram.com"><img src="images/instagram-icon.png" alt=""></a>
+        </p>
+        <p> &copy; <a class="contact" href="mailto:103538067@swin.edu.au">Mohammad Shafiul Marjan Ali </a> All rights reserved</p>
+      </section>
+     </footer>
+	   
+</body>
+</html>
+
+     
