@@ -10,7 +10,7 @@
   
   <link href="style/style.css" rel="stylesheet"/>
   
-  
+  <script src="srcipts/enhancement.js"></script>
   <title>Enhancement</title>
   </head>
 <body>
@@ -28,20 +28,60 @@
                 <a href="apply.html" class="nave-links-item">Apply</a>
                 <a href="about.html" class="nave-links-item">About</a>
                 <a href="enhancement.html" class="nave-links-item">Enhancement</a>
+				<a href="enhancements2.html"class="nave-links-item">Enhancements2</a>
                                  
-            </div>
+            </div> 
         </nav>
                                  
     </header>
+
+
+    <div class="form_ animate" id="form">
+        <div class="img_form"> <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal" >&times;</span><img src="images/userid.png"></div>
+        <form class="form_a" >
+    
+              <label for="username"> </label>
+          <input type="text" placeholder="Create a Username"  name="Username" value="username" id="username" required>
+    
+        
+          <input type="password" placeholder="Create a Password" name="Password" value="password" id="password" required>
+            
+          <input type="submit" value="Create an  Account" >
+        
+            
+              <div class="container2" >
+          <button type="button" onclick="document.getElementById('form').style.display='none'" class="cancel_">Cancel</button>
+    
+        </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	                                                <!--Begin Content-->
-  <h3>Enhancement</h3>
+<div class="enhancement-main-body">
+    <h3>Enhancement</h3>
     <table class="en-table">
 	<tr>
 	<th>Feature Name</th>
     <td> Fully Responsive Webpage</td>
 	</tr>
 	<tr>
-   <th>Description</th>
+    <th>Description  </th>
       <td>This webpage was designed to be viewable on mobile devices. Used css media rule to define custom attributes for smaller screens. The Home page changes layout on a mobile screen but the other pages mostly retain it's structure.
       Manually defined attributes for a lot of elements to make the texts and photos appear more natural on a mobile device.  It was optimised for for modern mobile phone screens. 
       This page is optimised for tablets, i.e., separate size values  defined for tablet screens. </td>
@@ -78,6 +118,8 @@
 		 <td><a href="https://www.w3schools.com/w3css/w3css_slideshow.asp">click to visit the source page</a></td>
 		 </tr>
 		 </table>
+
+</div>
 
 	
 	 
